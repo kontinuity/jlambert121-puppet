@@ -114,6 +114,11 @@ Array[String].  Alternative DNS names for this server
 
 Default: undef
 
+#####`basemodulepath`
+String.  Alternative basemodulepath for this server
+
+Default: undef
+
 #####`fileserver_conf`
 Hash[String, Hash[String, String]].  Fileserver mounts to configure
 

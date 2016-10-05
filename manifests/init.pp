@@ -11,6 +11,7 @@ class puppet (
   String                                       $puppetmaster    = $::puppet::params::puppetmaster,
 
   # Server
+  Optional[String]                             $basemodulepath        = $::puppet::params::basemodulepath,
   Optional[Array[String]]                      $dns_alt_names         = $::puppet::params::dns_alt_names,
   Optional[Hash[String, Hash[String, String]]] $fileserver_conf       = $::puppet::params::fileserver_conf,
   Boolean                                      $manage_hiera          = $::puppet::params::manage_hiera,
